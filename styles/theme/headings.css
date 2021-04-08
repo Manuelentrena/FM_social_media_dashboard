@@ -1,0 +1,79 @@
+h1 {
+  color: var(--c-h1);
+  font: normal var(--bold) var(--fs-h1) / var(--line-height-h1) "Poppins bold",
+    sans-serif;
+  margin: 0.5rem 0rem;
+  letter-spacing: -0.5rem;
+}
+
+input {
+  color: var(--c-text-input);
+  font: normal var(--medium) var(--fs-input) / var(--line-height) "Poppins bold",
+    sans-serif;
+  margin: 0;
+  padding: 2rem 2.5rem;
+}
+
+h2 {
+  color: var(--c-h2);
+  font: normal var(--bold) var(--fs-h2) / var(--line-height) "Poppins bold",
+    sans-serif;
+  margin: 0.5rem 0rem;
+  letter-spacing: -0.3rem;
+}
+
+h3 {
+  color: var(--c-h3);
+  font: normal var(--bold) var(--fs-h3) / var(--line-height) "Poppins bold",
+    sans-serif;
+  margin: 0.5rem 0rem 2rem 0rem;
+}
+
+p {
+  color: var(--c-p);
+  font: normal var(--medium) var(--fs-p) / var(--line-height) "Poppins bold",
+    sans-serif;
+  margin: 0.5rem 0rem;
+}
+
+@media screen and (max-width: 1440px) {
+  h1 {
+    font-size: calc((var(--fs-h1) * 75) / 100);
+  }
+  p,
+  input {
+    font-size: calc((var(--fs-p) * 75) / 100);
+  }
+}
+
+@media screen and (max-width: 769px) {
+  h1 {
+    font-size: calc((var(--fs-h1) * 55) / 100);
+    letter-spacing: 0.05rem;
+  }
+  h2 {
+    font-size: calc((var(--fs-h2) * 75) / 100);
+  }
+  h3 {
+    font-size: calc((var(--fs-h3) * 75) / 100);
+  }
+  input {
+    padding-top: calc((2rem * 75) / 100);
+    padding-bottom: calc((2rem * 75) / 100);
+    padding-left: calc((2.5rem * 75) / 100);
+    padding-right: calc((2.5rem * 75) / 100);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: calc((var(--fs-h1) * 40) / 100);
+  }
+  h2 {
+    font-size: calc((var(--fs-h2) * 65) / 100);
+  }
+  p,
+  input {
+    font-size: calc((var(--fs-p) * 65) / 100);
+  }
+}

@@ -1,0 +1,48 @@
+/* Settings */
+@import "../styles/settings/typography.css";
+@import "../styles/settings/layout.css";
+@import "../styles/settings/colors.css";
+@import "../styles/settings/fonts.css";
+
+/* Global */
+@import "../styles/global/box-sizing.css";
+@import "../styles/global/normalize.css";
+
+/* Theme */
+@import "../styles/theme/headings.css";
+@import "../styles/theme/body.css";
+
+/* Layouts */
+@import "../styles/layouts/header.css";
+@import "../styles/layouts/container.css";
+@import "../styles/layouts/cards.css";
+@import "../styles/layouts/footer.css";
+
+/* Container */
+@import "../styles/container/nav/nav.css";
+@import "../styles/container/register/register.css";
+@import "../styles/container/burguer/icon.css";
+@import "../styles/container/nav/navBurguer.css";
+@import "../styles/container/hero/hero.css";
+@import "../styles/container/input/input.css";
+@import "../styles/container/card/card.css";
+
+/* Components */
+@import "../styles/components/button/button.css";
+@import "../styles/components/logo/logo.css";
+@import "../styles/components/nav/nav.css";
+@import "../styles/components/register/register.css";
+@import "../styles/components/burguer/icon.css";
+@import "../styles/components/nav/navBurguer.css";
+@import "../styles/components/hero/hero.css";
+@import "../styles/components/input/link.css";
+@import "../styles/components/services/services.css";
+@import "../styles/components/card/card.css";
+@import "../styles/components/banner/banner.css";
+@import "../styles/components/nav/navFooter.css";
+
+/* utils */
+@import "../styles/utils/center.css";
+@import "../styles/utils/none.css";
+@import "../styles/utils/hidden.css";
+@import "../styles/utils/visible.css";

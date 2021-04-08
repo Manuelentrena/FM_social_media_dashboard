@@ -1,0 +1,31 @@
+:root {
+  /* ESCALA */
+  --fs-base: 62.5%;
+
+  /* TAMAÑOS */
+  --fs-higher: 11rem;
+  --fs-high: 5rem;
+  --fs-midhigh: 3rem;
+  --fs-medium: 3rem;
+
+  /* HEADINGS */
+  --fs-h1: var(--fs-higher);
+  --fs-h2: var(--fs-high);
+  --fs-h3: var(--fs-midhigh);
+  --fs-p: var(--fs-medium);
+  --fs-input: var(--fs-medium);
+  --fs-text-primary: var();
+  --fs-text-secundary: var();
+  --fs-text-button-high: var();
+  --fs-text-button-small: var();
+  --fs-text-nav: var();
+  --fs-text-nav-header: var();
+
+  /* PESOS */
+  --bold: 700;
+  --medium: 500;
+
+  /* Altura de linea */
+  --line-height: 1.5;
+  --line-height-h1: 1.1;
+}
