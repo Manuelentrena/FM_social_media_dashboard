@@ -1,0 +1,38 @@
+.togle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 19rem;
+}
+.togle__icon {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0.3rem;
+  border-radius: 2rem;
+  width: 6.2rem;
+  background: var(--c-bg-togle);
+  cursor: pointer;
+}
+
+.togle__icon:hover {
+  background: var(--c-bg-togle-hover);
+}
+
+.togle__subicon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--c-icon-togle);
+  transition: all ease 0.5s;
+}
+
+.iconMove {
+  transform: translateX(3rem);
+}
+
+.togle__text {
+  color: var(--c-text-toggle);
+  margin: 0;
+}

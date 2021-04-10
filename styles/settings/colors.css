@@ -1,91 +1,86 @@
 :root {
   /* COLORS */
 
-  /* Primarios */
-  --Cyan: #2acfcf;
-  --Cyan-dark: #2f9e9e;
-  --Cyan-light: #9ae7e7;
-  --Dark-Violet: #3b3054; /* FONDO */
-  /* Secundarios */
-  --Red: #f46262;
-  /* Neutrales */
-  --white: #ffffff;
-  --Gray: #f0f1f6; /* FONDO OSCURO */
-  --Grayish-Violet: #9e9aa7; /* LETRRAS */
-  --Very-Dark-Blue: #35323e; /* LETRAS */
-  --Very-Dark-Violet: #232127; /* FOOTER */
+  /* primary */
+  --lime-green: #1db489;
+  --bright-red: #dc414c;
 
-  /* HEADINGS */
+  /* Colors Themes */
+  --toggle: var(--light, #a4accc)
+    var(--dark, linear-gradient(270deg, #1db489 0%, #3699da 100%));
+  --togle-hover: linear-gradient(270deg, #1db489 0%, #3699da 100%);
+  --text-togle: #a4accc;
+  --bg-up: var(--light, #e6e8f5) var(--dark, #222635);
+  --bg-down: var(--light, #ffffff) var(--dark, #1d2029);
+  --text-primary: var(--light, #1b1e27) var(--dark, #ffffff);
+  --text-secundary: var(--light, #606271) var(--dark, #a4accc);
+  /*   --card: var(--light, #f0f3fa) var(--dark, #252b43);
+  --card-hover: var(--light, #e1e3f0) var(--dark, #333a56); */
+  --card-shadow: var(--light, -5px 5px 10px #c8cad5, 5px -5px 10px #ffffff)
+    var(--dark, -5px 5px 10px #0f111b, 5px -5px 10px #3b456b);
+  --card-bg: var(--light, linear-gradient(225deg, #cfd1dd, #f6f8ff))
+    var(--dark, linear-gradient(225deg, #21273c, #282e48));
 
-  --c-h1: var(--Very-Dark-Blue);
-  --c-h2: var(--Very-Dark-Blue);
-  --c-h3: var(--Very-Dark-Blue);
-  --c-h4: var(--Very-Dark-Blue);
-  --c-p: var(--Grayish-Violet);
+  --card-shadow-hover: var(
+      --light,
+      -7px 7px 17px #c1c6e5,
+      7px -7px 17px #e3e8ff
+    )
+    var(--dark, 5px -5px 28px #323955, -5px 5px 28px #343b57);
+  --card-bg-hover: var(--light, linear-gradient(225deg, #e1e6ff, #bdc2e0))
+    var(--dark, linear-gradient(45deg, #373e5c, #2e344d));
 
-  /* ---COMPONENTES--- */
+  /*     background: linear-gradient(225deg, #e1e6ff, #bdc2e0);
+  box-shadow: -7px 7px 17px #c1c6e5, 7px -7px 17px #e3e8ff;
+
+  background: linear-gradient(45deg, #373e5c, #2e344d);
+  box-shadow: 5px -5px 28px #323955, -5px 5px 28px #343b57; */
+
+  /* Social */
+  --facebook: #198ff5;
+  --twitter: #1ca0f2;
+  --instagram: linear-gradient(270deg, #fdc468 0%, #df4996 100%);
+  --youtube: #c4032a;
 
   /* LAYOUT */
-  --c-bg-body: var(--Gray);
-  --c-bg-hero: var(--white);
+  --c-bg-body: var(--bg-up);
+  --c-bg-hero: var(--bg-down);
 
   /* HEADER */
-  --c-bg-header-bg: var(--white);
-  --c-text-nav-header: var(--Grayish-Violet);
-  --c-text-nav-header-hover: var(--Very-Dark-Blue);
+  --c-separator: var(--text-secundary);
 
-  /* ICON BURGUER  AND NAV*/
-  --c-icon-burguer: var(--Grayish-Violet);
-  --c-bg-navBurguer: var(--Dark-Violet);
-  --c-text-navBurguer: var(--white);
-  --c-text-navBurguer-hover: var(--Cyan);
-  --c-separator-navBurguer: var(--Grayish-Violet);
+  /* TOGLE */
+  --c-bg-togle: var(--toggle);
+  --c-bg-togle-hover: var(--togle-hover);
+  --c-icon-togle: var(--bg-up);
+  --c-text-toggle: var(--text-togle);
 
-  /* BUTTON PRIMARY */
-  --c-bg-button-primary: var(--Cyan);
-  --c-bg-button-primary-hover: var(--Cyan-light);
-  --c-text-button-primary: var(--white);
-  --c-text-button-primary-hover: var(--white);
+  /* TITLES */
+  --c-h1: var(--text-primary);
+  --c-h2: var(--text-primary);
+  --c-p: var(--text-primary);
+  --c-small: var(--text-secundary);
 
-  /* BUTTON SECONDARY */
-  --c-bg-button-secondary: var(--Cyan);
-  --c-border-button-secondary: var(--Cyan-dark);
-  --c-border-button-secondary-hover: var(--Cyan-light);
-  --c-bg-button-secondary-hover: var(--Cyan-light);
-  --c-bg-button-secondary-copied: var(--Dark-Violet);
-  --c-text-button-secondary: var(--white);
-  --c-text-button-secondary-hover: var(--white);
+  /* CARD */
+  --c-bg-card: var(--card);
+  --c-bg-card-hover: var(--card-hover);
+  --c-cite-card: var(--text-secundary);
+  --c-num-card: var(--text-primary);
+  --c-followers-card: var(--text-secundary);
+  --c-output-up-card: var(--lime-green);
+  --c-output-down-card: var(--bright-red);
 
-  /* IMPUT SHORT */
-  --c-bg-content: var(--Dark-Violet);
-  --c-bg-input: var(--white);
-  --c-text-input: var(--Grayish-Violet);
-  --c-text-error-input: var(--Red);
-  --c-border-error-input: var(--Red);
-  --c-border-input: var(--Grayish-Violet);
-  --c-message-error: var(--Red);
+  /* SUBCARD */
+  --c-bg-like: var(--card);
+  --c-bg-like-hover: var(--card-hover);
+  --c-title-like: var(--text-secundary);
+  --c-num-like: var(--text-primary);
+  --c-output-up-like: var(--lime-green);
+  --c-output-down-like: var(--bright-red);
 
-  /* LINK */
-  --bg-link: var(--white);
-  --c-text-link-large: var(--Very-Dark-Blue);
-  --c-text-link-short: var(--Cyan);
-  --c-separator-link: var(--Gray);
-
-  /* SERVICES */
-  --c-bg-services: var(--Gray);
-  --c-bg-card: var(--white);
-  --c-square-services: var(--Cyan);
-  --c-circle-services: var(--Dark-Violet);
-
-  /* BANNER */
-  --c-title-banner: var(--white);
-  --c-bg-banner: var(--Dark-Violet);
-
-  /* FOOTER */
-  --c-bg-footer: var(--Very-Dark-Violet);
-  --c-header-footer: var(--white);
-  --c-link-footer: var(--Grayish-Violet);
-  --c-link-footer-hover: var(--Cyan);
-  --c-icon-footer: var(--white);
-  --c-icon-footer-hover: var(--Cyan);
+  /* ICONOS*/
+  --c-facebook: var(--facebook);
+  --c-twitter: var(--twitter);
+  --c-instagram: var(--instagram);
+  --c-youtube: var(--youtube);
 }

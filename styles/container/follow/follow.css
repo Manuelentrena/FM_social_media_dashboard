@@ -1,0 +1,19 @@
+.\#follow {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(31rem, 1fr));
+  gap: 4rem 4rem;
+  width: 100%;
+  margin-bottom: 6rem;
+}
+
+@media screen and (max-width: 769px) {
+  .\#follow {
+    grid-template-columns: repeat(auto-fill, minmax(34rem, 1fr));
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .\#follow {
+    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  }
+}
